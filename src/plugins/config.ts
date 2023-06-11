@@ -16,6 +16,7 @@ const ConfigSchema = Type.Strict(
     LOG_LEVEL: Type.String(),
     API_HOST: Type.String(),
     API_PORT: Type.String(),
+    JIRA_HOST: Type.String(),
   })
 );
 

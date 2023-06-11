@@ -25,9 +25,7 @@ const routes: FastifyPluginAsync = async (server) => {
       }>,
     ) {
       try {
-        console.log('called');
         const { project } = request.query;
-        console.log('project', project);
         const result = await countIssuesWithoutComponentLead(project);
         return {
           data: {
